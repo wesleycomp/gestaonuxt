@@ -11,28 +11,29 @@
              <nuxt-child/>
         </div>
   </template>
-  
+
   <script>
   export default {
-  
+
       name:'',
+
       //    middleware(){
         //      console.log('middleware servicos')
         // },
 
       data() {
-  
+
           return{
-  
+
           };
-  
+
       },
-  
+
       methods:{},
-  
+
   }
   </script>
-  
+
   <style>
-  
+
   </style>
