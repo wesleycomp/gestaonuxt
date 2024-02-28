@@ -1,9 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gestao',
+    title: 'Escola',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
@@ -18,15 +18,18 @@ export default {
 
 
   //CHAMADA DE MIDDLEWARES
- // router:{
- //    middleware:'auth'
- //  },
+//  router:{
+//     middleware:'auth'
+//   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/dayjs',
+    '@/plugins/vtooltip',
+    '@/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

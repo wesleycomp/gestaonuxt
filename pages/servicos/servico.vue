@@ -12,7 +12,14 @@
         </div>
   </template>
 
+
+
   <script>
+
+
+  import { mapActions } from "vuex";
+
+
   export default {
 
       name:'',
@@ -29,7 +36,10 @@
 
       },
 
-      methods:{},
+      methods:{
+
+        
+      },
 
   }
   </script>

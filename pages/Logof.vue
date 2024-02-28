@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Slug: {{ $route.params.slug }}
-  </div>
+<div>Não esta logado</div>
 </template>
 
 <script>

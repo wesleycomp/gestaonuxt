@@ -1,9 +1,22 @@
 <template>
-  <Tutorial/>
+ <home-root />
 </template>
 
 <script>
+
 export default {
-  name: 'IndexPage'
+
+  name: 'IndexPage',
+
+    data() {
+      return{}
+    },
+
+    mounted(){
+      console.log(this.$dayjs().format())
+    }
+
+
 }
+
 </script>
