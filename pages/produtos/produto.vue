@@ -1,28 +1,34 @@
 <template>
       <div>
+        {{ produtos }}
      </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+
 export default {
 
    name:'produto',
-    // data() {
 
-    //     return{
-    //       produtos:[],
-    //       tableAlunos:[]
-    //     };
 
-    // },
+    data() {
 
-  created() {
-    this.$store.dispatch('product/load')
+        return{
+          produtos:[],
+          texto: '',
+          tableAlunos:[]
+        };
+
+    },
+
+
+ async asyncData({ store }) {
+    return {
+      produtos: await store.dispatch('product/getCategories')
+       // .then(response => response.map(o => ({ ...o, is_updating: false })))
+    }
   },
-  computed: {
-    ...mapState(['product'])
-  },
+
 
 
   // async fetch({ $axios }) { //depois do componente ser criado

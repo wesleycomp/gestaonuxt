@@ -4,6 +4,7 @@ export const state = () => ({
   courses:[],
     _id: 0,
   title: 'Unknown',
-  price: 0
+  price: 0,
+  frase:''
 
  })

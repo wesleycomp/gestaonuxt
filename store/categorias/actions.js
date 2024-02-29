@@ -1,7 +1,6 @@
 export default {
-
- getCategories() {
-    return this.$axios.$get('https://api.kanye.rest');
+  getCategories() {
+    return this.$axios.$get('categories');
   },
   deleteCategory(context, id) {
     return this.$axios.$delete(`categories/${id}`)
@@ -11,6 +10,5 @@ export default {
   },
   addCategory(context, data) {
     return this.$axios.$post('categories', data)
-  }
+  },
 }
-

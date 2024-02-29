@@ -33,7 +33,9 @@
             <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name: 'index'}">Home</nuxt-link>
             <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'servicos-servico' }">Servicos</nuxt-link>
             <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'produtos-produto'}">Produtos</nuxt-link>
-        </div>
+               <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{ name: 'categorias-categoria' }">Categorias</nuxt-link>
+
+          </div>
       </div>
     <!-- FIM MENUS-->
 
