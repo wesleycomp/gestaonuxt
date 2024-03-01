@@ -27,13 +27,11 @@
   <!-- FIM HEADER-->
 
   <!-- MENUS-->
-
       <div class="bg-gray-200 pt-1 pl-14  mb-10  ">
         <div>
             <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name: 'index'}">Home</nuxt-link>
-            <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'servicos-servico' }">Servicos</nuxt-link>
+            <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'alunos-aluno' }">Alunos</nuxt-link>
             <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'produtos-produto'}">Produtos</nuxt-link>
-               <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{ name: 'categorias-categoria' }">Categorias</nuxt-link>
 
           </div>
       </div>
@@ -47,30 +45,6 @@
      </div>
     <!-- FIM BODY-->
 
-    <!-- FOOT -->
-      <div class="w-screen mt-44 pt-44">
-              <footer class="bg-[#0066B0] rounded-lg shadow m-4  ">
-                  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span class="text-sm text-gray-100 sm:text-center ">© 2024 <a href="#" class="hover:underline">TCE-TO</a>. All Rights Reserved.
-                  </span>
-                  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-100   sm:mt-0">
-                      <li>
-                          <a href="#" class="hover:underline me-4 md:me-6">Sobre</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline me-4 md:me-6">Politicas de Privacidade</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline me-4 md:me-6">Licença</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Contatos</a>
-                      </li>
-                  </ul>
-                  </div>
-        </footer>
-      </div>
-    <!-- FIM FOOT -->
    </div>
 </template>
 

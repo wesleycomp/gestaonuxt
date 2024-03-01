@@ -57,34 +57,34 @@
       "categoryId": 5
     }
   ],
-  "categories": [
+  "alunos": [
     {
       "id": "1",
-      "name": "Equipamentos de TI, assinatura de softwares e cursos"
+      "name": "Maria Clara da Silva"
     },
     {
       "id": "2",
-      "name": "Salário e freelas"
+      "name": "Roberto Bruno Elias"
     },
     {
       "id": "3",
-      "name": "Impostos"
+      "name": "Carlos Eduardo Bandeira"
     },
     {
       "id": "4",
-      "name": "Entretenimento"
+      "name": "Joao Carlos Albuquerque"
     },
     {
       "id": "5",
-      "name": "Investimentos"
+      "name": "Isabella Miranda de Carvalho"
     },
     {
       "id": "9064",
-      "name": "teste"
+      "name": "Larissa Ameida Dias"
     },
     {
-      "id": "2ead",
-      "name": "aeeccio"
+      "id": "cf19",
+      "name": "Adison Carneiro"
     }
   ]
 }

@@ -29,7 +29,7 @@ export default {
   plugins: [
     '@/plugins/dayjs',
     '@/plugins/vtooltip',
-    '@/plugins/axios'
+    '@/plugins/axios',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
