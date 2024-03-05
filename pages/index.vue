@@ -1,5 +1,5 @@
 <template>
- <home-root />
+ <home />
 </template>
 
 <script>
