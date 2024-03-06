@@ -27,7 +27,7 @@
 
   <!-- MENUS-->
       <div class="bg-gray-200 pt-1 pl-14  mb-10  ">
-          <template v-if="!isAuthenticated">
+          <template v-if="isAuthenticated">
              <div>
                 <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name: 'index'}">Home</nuxt-link>
                 <nuxt-link class=" pl-8  text-lg text-gray-600 hover:underline" :to="{name:'alunos-aluno' }">Alunos</nuxt-link>

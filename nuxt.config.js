@@ -16,13 +16,6 @@ export default {
     ]
   },
 
- components: true,
-
-  //CHAMADA DE MIDDLEWARES
- router:{
-    middleware:'isAuthenticated'
-  },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -46,12 +39,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+
+    //COOKIES
+     // Simple usage
+    'cookie-universal-nuxt',
+    // With options
+    ['cookie-universal-nuxt', { alias: 'cookiz', parseJSON: false }],
   ],
+
+//config para cookie
+ ssr: true,
+ target: 'server',
+
+
+
+  //CHAMADA DE MIDDLEWARES
+ router:{
+    middleware:'isAuthenticated'
+  },
 
   auth: {
     // Options
      strategies: {
+
       local: {
 //      scheme: "refresh",
         token: {
@@ -60,20 +71,29 @@ export default {
           required: true,
           type: "Bearer"
         },
+
+
         user: {
           property: "user",
           autoFetch: true
         },
+
+
 //      refreshToken: {  // it sends request automatically when the access token expires, and its expire time has set on the Back-end and does not need to we set it here, because is useless
 //        property: "refresh_token", // property name that the Back-end sends for you as a refresh token for saving on localStorage and cookie of user browser
 //        data: "refresh_token", // data can be used to set the name of the property you want to send in the request.
 //      },
+
+
         endpoints: {
-          login: { url: "/api/auth/login", method: "post" },
-//        refresh: { url: "/api/auth/refresh-token", method: "post" },
+        //  login: { url: "/api/auth/login", method: "post" },
+        //  refresh: { url: "/api/auth/refresh-token", method: "post" },
           logout: false, //  we don't have an endpoint for our logout in our API and we just remove the token from localstorage
           user: { url: "/api/auth/user", method: "get" }
         }
+
+
+
       }
     }
   },
