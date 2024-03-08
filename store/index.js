@@ -1,9 +1,18 @@
 export const getters = {
+
+
     isAuthenticated(state) {
 
-      return state.auth.loggedIn; // auth object as default will be added in vuex state, when you initialize nuxt auth
-    },
+      return state.oauth.loggedIn;
+   },
+
     getUserInfo(state) {
-      return state.auth.user;
+      return state.oauth.user;
+    },
+
+    authenticatedLogof(state){
+      state.loggedIn = false
     }
+
+
   };

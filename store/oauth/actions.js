@@ -1,5 +1,7 @@
 export default {
 
+
+  /*
  ActionSetUser({ commit }, payload) {
     commit(types.SET_USER, payload)
 },
@@ -10,6 +12,17 @@ export default {
     storage.setHeaderToken(payload)
     commit(types.SET_TOKEN, payload)
 },
+*/
+
+
+ ActionSetToken({ commit }, payload) {
+
+  commit('authenticatedLogin',  payload )
+
+},
+
+
+/*
 
  ActionCheckToken ({ dispatch, state }) {
 
@@ -52,5 +65,5 @@ ActionSignOut ({ dispatch }){
   dispatch('ActionSetUser', {})
   dispatch('ActionSetToken', '')
 }
-
+*/
 }

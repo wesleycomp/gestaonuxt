@@ -1,16 +1,22 @@
-export default function({  to, app, store, redirect, query }) {
-
-     var token = to.query.access_token
+export default function({ app, redirect, store}) {
 
 
-  if (query.lang) {
-    app.$cookiz.set('acces_token', token)
+store.dispatch('oauth/ActionSetToken', "token")
 
-  }
 
-  else{
-    return redirect("/auth/login");
-  }
+
+
+ //app.$cookiz.set('acces_token', 'ASHGDJAGSDTYWEUTW464646464646436262HDKAHSKDHASKDHKAHDKAHDKZCZXMCZXVCNZXCVNZXCZXCZX')
+
+ //var token = app.$cookiz.get('acces_token')
+
+  //if (!token) {
+   // return redirect("/auth/login");
+  //}
+
+  //else{
+   // return redirect("/auth/login");
+ // }
 //  if (!store.state.auth.loggedIn) {
  //   return redirect("/auth/login");
 //  }

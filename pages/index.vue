@@ -1,22 +1,10 @@
+<!-- Please remove this file from your project -->
 <template>
- <home />
+  <div>
+   <home />
+  </div>
 </template>
 
 <script>
-
-export default {
-
-  name: 'IndexPage',
-
-    data() {
-      return{}
-    },
-
-    mounted(){
-      console.log(this.$dayjs().format())
-    }
-
-
-}
-
+export default {}
 </script>
