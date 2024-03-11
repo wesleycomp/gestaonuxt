@@ -117,7 +117,7 @@ export default {
 
 
     addAluno() {
-      
+
       if (!this.name) {
         return
       }
